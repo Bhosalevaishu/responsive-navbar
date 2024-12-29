@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <style>
+          .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+          }
+          .flower-card{
+                width:400px;
+                height: 620px;
+                border: 2px solid #000;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #2f2f2f;
+                margin: 20px 40px;
+            }
+            .flower-img{
+                width:400px;
+                height: 230px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 7px 7px 0 0;
+            }
+            .headding{
+                text-align: center;
+            }
+            .caption{
+                font-size: 20px;
+                padding: 0 10px;
+                font-family:monospace;
+                text-align: justify;
+                padding-bottom: 20px;
+            }
+            .btn{
+                border-radius: 15px;
+                text-align: center;
+                padding: 7px 20px;
+                background-color: rgb(160, 241, 160);
+                color:black;
+                border: none;
+                display: block;
+                margin: 0 auto;
+                font-size: 17px;
+            }
+            .btn:hover{
+                box-shadow:  0 0 5px rgb(11, 1, 1);
+            }
+            .msg{
+                text-align: center;
+                color: rgb(13, 244, 40);
+            }
+        /* Mobile*/
+        @media   (max-width:600px){
+            .flower-card{
+                width:300px;
+                height: 540px;
+                margin-top: 10px;
+            }
+            .flower-img{
+                width:300px;
+            }
+            .headding{
+                font-size: 25px;
+            }
+            .caption{
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .btn{
+                border-radius: 10px;
+                font-size: 12px;
+             }
+             .msg{
+                text-align: center;
+                color: rgb(13, 244, 40);
+                font-size: 25px;
+            }
+         }
+        /* Tablet */
+         @media(min-width:600px)and (max-width:950px){
+            .flower-card{
+                width:350px;
+                height: 580px;
+                margin: 10px 0px;
+            }
+            .flower-img{
+                width:350px;
+                height: 220px;
+            }
+            .headding{
+                font-size: 25px;
+            }
+            .caption{
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            .btn{
+                border-radius: 15px;
+                font-size: 15px;
+             }
+             .container{
+            justify-content: space-around;
+          }
+        }
+        /* Laptop */
+         @media(min-width:951px)and (max-width:1272px){
+            .flower-card{
+                width:350px;
+                height: 650px;
+                margin: 20px 10px;
+            }
+            .flower-img{
+                width:350px;
+                height: 250px;
+            }
+            .headding{
+                font-size: 30px;
+            }
+            .caption{
+                font-size: 20px;
+                margin-bottom: 10;
+            }
+            .btn{
+                border-radius: 12px;
+                font-size: 20px;
+             }
+        }
+         </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flower-card">
+             <img src="./img/rose.jpeg" class="flower-img">
+             <h1 class="headding" >Rose🌹</h1>
+             <p class="caption">The rose is a type of flowering shrub. 
+                 There are over three hundred species and tens of thousands of cultivars.
+                  The flowers of the rose grow in many different colors,
+                 from the well-known red rose or yellow rose and sometimes white , purple rose.
+            </p>
+            <button class="btn">View more👆</button>
+            </div>
+            <div class="flower-card">
+                <img src="./img/lotus.jpeg" class="flower-img" >
+                <h1 class="headding" >Lotus🪷</h1>
+                <p class="caption">The Lotus or water lily is an aquatic plant of Nymphaea with broad green floating leaves
+                   and bright flowers that grow in shallow waters.
+                   These flowers have long stems that contain air vacuoles in them. 
+                   The lotus flowers have many bright petals in overlapping symmetrical patterns.
+                </p>
+                <button class="btn">View more👆</button>
+            </div>
+            <div class="flower-card">
+                <img src="./img/chapa.jpeg" class="flower-img">
+                <h1 class="headding" >Chapa💮</h1>
+                <p class="caption">Plumeria alba is the national flower of Laos, 
+                    where it is known under the local name champa or dok champa. 
+                    In Bengali culture, most white flowers, and in particular,
+                    plumeria (Bengali, chômpa or chãpa), are associated with funerals and death.
+                </p>
+                <button class="btn">View more👆</button>
+            </div>
+        </div>
+        <h1 class="msg">Thank You Visit My Website...!!💖</h1>
+    </body>
+</html>

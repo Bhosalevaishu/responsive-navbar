@@ -4,6 +4,53 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Responsive Navbar</title>
         <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                background-color: rgb(133, 236, 133);
+                color: #131313;
+                padding: 15px;
+                border: 2px solid rgb(3, 134, 3);
+                position:sticky;
+                top: 0;
+                width: 100%;
+            }
+            .flower-heading{
+                text-align: left;
+                font-size: 25px;
+                padding-left: 0;
+            }
+            .items{
+              font-size: 20px;
+              margin-left: 60px;
+              text-decoration: none;
+            }
+            .items:hover{
+                text-decoration: underline;
+            }
+            .home{
+                margin-left: 700px;
+            }
+            .input-box{
+                border-radius: 50px;
+                border: none;
+                height: 17px;
+                width: 160px;
+                padding: 5px;
+                padding-left: 10px;
+                margin-left: 100px;
+            }
+            .input-box:hover{
+                box-shadow:  0 0 5px  #272626;
+            }
+            .heading-msg{
+                text-align: center;
+                padding: 10px 0;
+                font-size: 40px;
+
+            }
           .container{
             display: flex;
             flex-wrap: wrap;
@@ -54,6 +101,26 @@
             }
         /* Mobile*/
         @media   (max-width:600px){
+            .navbar{
+                padding: 10px;
+            }
+            .flower-heading{
+                font-size: 25px;
+            }
+            .items{
+              font-size: 20px;
+              margin-left: 22px;
+            }
+            .items:hover{
+                text-decoration: underline;
+            }
+            .input-box{
+                display: none;
+            }
+            .heading-msg{
+                padding: 0;
+                font-size: 25px;
+            }
             .flower-card{
                 width:300px;
                 height: 540px;
@@ -81,6 +148,28 @@
          }
         /* Tablet */
          @media(min-width:600px)and (max-width:950px){
+            .flower-heading{
+                font-size: 25px;
+            }
+            .items{
+              font-size: 23px;
+              margin-left: 40px;
+            }
+            .home{
+                margin-left: 200px;
+            }
+            .items:hover{
+                text-decoration: underline;
+            }
+            .input-box{
+                margin-left: 70px;
+            }
+            .input-box:hover{
+                box-shadow:  0 0 5px  #272626;
+            }
+            .heading-msg{
+                font-size: 30px;
+            }
             .flower-card{
                 width:350px;
                 height: 580px;
@@ -107,6 +196,19 @@
         }
         /* Laptop */
          @media(min-width:951px)and (max-width:1272px){
+            .flower-heading{               
+                font-size: 27px;
+            }
+            .items{
+              font-size: 23px;
+              margin-left: 50px;
+            }
+            .home{
+                margin-left: 450px;
+            }
+            .input-box{
+                margin-left: 100px;
+            }
             .flower-card{
                 width:350px;
                 height: 650px;
@@ -131,6 +233,16 @@
          </style>
     </head>
     <body>
+            <div class="navbar">
+                <b class="flower-heading">🌷Flowers🌷</b>
+                <a href="Home" class="items home">Home</a>
+                <a href="About"  class="items">About</a>
+                <a href="contact"  class="items">Contact</a>
+                <input type="text"placeholder="search here" class="input-box">
+                </div>
+
+
+                <h1 class="heading-msg">💐Multi Flowers💐</h1>
         <div class="container">
             <div class="flower-card">
              <img src="./img/rose.jpeg" class="flower-img">
@@ -154,7 +266,7 @@
             </div>
             <div class="flower-card">
                 <img src="./img/chapa.jpeg" class="flower-img">
-                <h1 class="headding" >Chapa💮</h1>
+                <h1 class="headding" >Plumeria alba💮</h1>
                 <p class="caption">Plumeria alba is the national flower of Laos, 
                     where it is known under the local name champa or dok champa. 
                     In Bengali culture, most white flowers, and in particular,

@@ -103,6 +103,11 @@
                 text-align: center;
                 color: rgb(13, 244, 40);
             }
+            .menu-icon{
+                display: none;
+                height: 40px;
+                width: 40px;
+            }
         /* Mobile*/
         @media   (max-width:600px){
             .navbar{
@@ -112,11 +117,7 @@
                 font-size: 25px;
             }
             .items{
-              font-size: 20px;
-              margin-left: 22px;
-            }
-            .items:hover{
-                text-decoration: underline;
+                display: none;
             }
             .input-box{
                 display: none;
@@ -149,6 +150,13 @@
                 color: rgb(13, 244, 40);
                 font-size: 25px;
             }
+            .menu-icon{
+                display:block;
+                margin-left: auto;
+                margin-right: 20px;
+                height: 40px;
+            }
+       
          }
         /* Tablet */
          @media(min-width:600px)and (max-width:950px){
@@ -242,10 +250,9 @@
                 <a href="Home" class="items home">Home</a>
                 <a href="About"  class="items">About</a>
                 <a href="contact"  class="items">Contact</a>
-                <input type="text"placeholder="search here" class="input-box">
-                </div>
-
-
+                <input type="text"placeholder="search here" class="input-box"> 
+                <img src="./icons/menu.png" class="menu-icon" > 
+            </div>
                 <h1 class="heading-msg">💐Multi Flowers💐</h1>
                 <img src="./img/flower.jpg" class="img">
         <div class="container">
